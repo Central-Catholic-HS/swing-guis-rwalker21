@@ -1,1 +1,7 @@
 language = "java_swing"
+import javax.swing.JOptionPane;
+public class SwingGUIs {
+  public static void main(String[] args) {
+    JOptionPane.showMessageDialog(null, "Hello World");
+  }
+}
