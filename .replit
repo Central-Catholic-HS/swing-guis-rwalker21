@@ -1,7 +1,14 @@
-language = "java_swing"
+language = "java_swing"  //this line above caused an error in the text editor I was using, so I commented it in my original program.
 import javax.swing.JOptionPane;
 public class SwingGUIs {
   public static void main(String[] args) {
-    JOptionPane.showMessageDialog(null, "Hello World");
+    JOptionPane.showMessageDialog(null, "Area of Circle Calculator");
+    String radius = JOptionPane.showInputDialog("Enter the radius");
+    double radius_num = Double.parseDouble(radius);
+
+    double area = Math.pow(radius_num, 2) * 3.14159;
+    JOptionPane.showMessageDialog(null, "Area is approximately: " + area);
+
+    System.exit(0);
   }
 }
